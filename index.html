@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>SE Roadmap</title>
+<meta name="theme-color" content="#0A6B47">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="SE Roadmap">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon.svg">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div class="wrap">
+  <header>
+    <div>
+      <div class="eyebrow">Software Engineering · 2026 to 2031</div>
+      <h1>SE Roadmap</h1>
+    </div>
+    <div class="overall">
+      <div class="overall-row"><span>All tasks</span><strong id="overallText">0 of 34 done</strong></div>
+      <div class="bar" role="progressbar" aria-label="Overall progress" aria-valuemin="0" aria-valuemax="100" id="overallBar"><i id="overallFill" style="width:0%"></i></div>
+    </div>
+  </header>
+
+  <main id="view"></main>
+</div>
+
+<nav aria-label="Sections">
+  <div class="tabs">
+    <button type="button" data-tab="plan">Plan</button>
+    <button type="button" data-tab="tasks">Checklist</button>
+    <button type="button" data-tab="notes">Notes</button>
+  </div>
+</nav>
+
+<script src="app.js"></script>
+<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){})})}</script>
+</body>
+</html>
